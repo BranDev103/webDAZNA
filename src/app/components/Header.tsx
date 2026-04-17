@@ -1,5 +1,11 @@
-import { Menu, X } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from './ui/dropdown-menu';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,10 +24,9 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <img
-              src="/src/assets/cdfd4b5b562876619db77a75112f64438d25f8f8.png"
+              src="/src/assets/logo_header.png"
               alt="Constructora Dazna Logo"
               className="h-12 w-auto object-contain"
-              onClick={() => scrollToSection('inicio')}
             />
           </div>
 
@@ -51,6 +56,26 @@ export function Header() {
             >
               Nosotros
             </button>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-gray-700 hover:text-emerald-600 transition-colors outline-hidden">
+                Interno
+                <ChevronDown size={16} />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem
+                  onClick={() => window.open('/inventario', '_blank')}
+                  className="cursor-pointer"
+                >
+                  Gestión de Inventario
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => window.open('/rh', '_blank')}
+                  className="cursor-pointer"
+                >
+                  Recursos Humanos
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <button
               onClick={() => scrollToSection('contacto')}
               className="bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors"
@@ -73,31 +98,51 @@ export function Header() {
           <nav className="md:hidden pb-4 flex flex-col gap-4">
             <button
               onClick={() => scrollToSection('inicio')}
-              className="text-gray-700 hover:text-amber-600 transition-colors text-left"
+              className="text-gray-700 hover:text-emerald-600 transition-colors text-left"
             >
               Inicio
             </button>
             <button
               onClick={() => scrollToSection('servicios')}
-              className="text-gray-700 hover:text-amber-600 transition-colors text-left"
+              className="text-gray-700 hover:text-emerald-600 transition-colors text-left"
             >
               Servicios
             </button>
             <button
               onClick={() => scrollToSection('proyectos')}
-              className="text-gray-700 hover:text-amber-600 transition-colors text-left"
+              className="text-gray-700 hover:text-emerald-600 transition-colors text-left"
             >
               Proyectos
             </button>
             <button
               onClick={() => scrollToSection('nosotros')}
-              className="text-gray-700 hover:text-amber-600 transition-colors text-left"
+              className="text-gray-700 hover:text-emerald-600 transition-colors text-left"
             >
               Nosotros
             </button>
+            <DropdownMenu>
+              <DropdownMenuTrigger className="flex items-center gap-1 text-gray-700 hover:text-emerald-600 transition-colors text-left outline-hidden">
+                Interno
+                <ChevronDown size={16} />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem
+                  onClick={() => window.open('/inventario', '_blank')}
+                  className="cursor-pointer"
+                >
+                  Gestión de Inventario
+                </DropdownMenuItem>
+                <DropdownMenuItem
+                  onClick={() => window.open('/rh', '_blank')}
+                  className="cursor-pointer"
+                >
+                  Recursos Humanos
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
             <button
               onClick={() => scrollToSection('contacto')}
-              className="bg-amber-600 text-white px-6 py-2 rounded-lg hover:bg-amber-700 transition-colors text-left"
+              className="bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors text-left"
             >
               Contacto
             </button>
