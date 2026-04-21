@@ -70,7 +70,7 @@ export function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={() => scrollToSection('proyectos')}
-            className="bg-emerald-600 text-white px-8 py-4 rounded-lg hover:bg-emerald-700 transition-colors text-lg"
+            className="bg-[#0d6efd] text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors text-lg"
           >
             Ver Proyectos
           </button>

@@ -39,7 +39,7 @@ export function About() {
             <div className="grid grid-cols-2 gap-4">
               {values.map((value, index) => (
                 <div key={index} className="flex items-start gap-2">
-                  <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-5 h-5 text-[#0d6efd] flex-shrink-0 mt-1" />
                   <span className="text-gray-700">{value}</span>
                 </div>
               ))}
@@ -60,10 +60,10 @@ export function About() {
             const Icon = stat.icon;
             return (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-[#0d6efd] rounded-full flex items-center justify-center mx-auto mb-4">
                   <Icon className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-4xl mb-2 text-emerald-600">
+                <div className="text-4xl mb-2 text-[#0d6efd]">
                   {stat.value}
                 </div>
                 <div className="text-gray-600">{stat.label}</div>

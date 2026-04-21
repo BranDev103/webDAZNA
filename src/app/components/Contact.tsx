@@ -40,7 +40,7 @@ export function Contact() {
           <div>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="nombre" className="block text-gray-700 mb-2">Nombre Completo</label>
+                <label htmlFor="nombre" className="block text-gray-700 mb-2">Nombre</label>
                 <input
                   type="text"
                   id="nombre"
@@ -48,8 +48,8 @@ export function Contact() {
                   value={formData.nombre}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
-                  placeholder=""
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
+                  placeholder="Tu nombre completo"
                 />
               </div>
 
@@ -62,8 +62,8 @@ export function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
-                  placeholder=""
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
+                  placeholder="tu.email@ejemplo.com"
                 />
               </div>
 
@@ -76,8 +76,8 @@ export function Contact() {
                   value={formData.telefono}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-600"
-                  placeholder=""
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
+                  placeholder="123-456-7890"
                   maxLength={10}
                 />
               </div>
@@ -91,14 +91,14 @@ export function Contact() {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-600 resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 resize-none"
                   placeholder="Cuéntanos sobre tu proyecto..."
                 />
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-emerald-600 text-white px-8 py-4 rounded-lg hover:bg-emerald-700 transition-colors flex items-center justify-center gap-2">
+                className="w-full bg-[#0d6efd] text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
                 <Send className="w-5 h-5" />Enviar Mensaje
               </button>
             </form>
@@ -110,39 +110,39 @@ export function Contact() {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Phone className="w-6 h-6 text-emerald-600" />
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Phone className="w-6 h-6 text-[#0d6efd]" />
                   </div>
                   <div>
                     <div className="text-gray-800 mb-1">Teléfono</div>
                     <a
                       href="tel:+1234567890"
-                      className="text-xl text-gray-800 hover:text-emerald-600">+52 7714897084
+                      className="text-xl text-gray-800 hover:text-[#0d6efd]">+52 7714897084
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <Mail className="w-6 h-6 text-emerald-600" />
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Mail className="w-6 h-6 text-[#0d6efd]" />
                   </div>
                   <div>
                     <div className="text-gray-700 mb-1">Email</div>
                     <a
                       href="mailto:contacto@dazna.mx"
-                      className="text-xl text-gray-800 hover:text-emerald-600">
+                      className="text-xl text-gray-800 hover:text-[#0d6efd]">
                       contacto@dazna.mx
                     </a>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-emerald-600" />
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-[#0d6efd]" />
                   </div>
                   <div>
                     <div className="text-gray-700 mb-1">Dirección</div>
-                    <address className="text-xl text-gray-800 not-italic hover:text-emerald-600">
+                    <address className="text-xl text-gray-800 not-italic hover:text-[#0d6efd]">
                       <a href="https://maps.app.goo.gl/EfipwvC5R4h4n4Lk9" target="_blank">Blvd. Valle de San Javier, N. 101, 3er piso, Col. Valle de
                       San Javier, C.P. 42086, Pachuca de Soto, Hgo.</a>
                     </address>
@@ -152,11 +152,11 @@ export function Contact() {
               </div>
             </div>
 
-            <div className="bg-emerald-50 p-8 rounded-xl border-2 border-emerald-200">
+            <div className="bg-blue-50 p-8 rounded-xl border-2 border-blue-200">
               <h3 className="text-2xl mb-4">Horario de Atención</h3>
               <div className="space-y-2 text-gray-700">
                 <p>
-                  <span className="font-semibold">Lunes a Viernes:</span> 9:00 AM - 5:00 PM
+                  <span className="font-semibold">Lunes a Viernes:</span> 9:00 AM - 6:00 PM
                 </p>
                 <p>
                   <span className="font-semibold">Sábado:</span> 9:00 AM - 1:00 PM

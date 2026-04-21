@@ -34,51 +34,51 @@ export function Header() {
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection('inicio')}
-              className="text-gray-700 hover:text-emerald-600 transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Inicio
             </button>
             <button
               onClick={() => scrollToSection('servicios')}
-              className="text-gray-700 hover:text-emerald-600 transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Servicios
             </button>
             <button
               onClick={() => scrollToSection('proyectos')}
-              className="text-gray-700 hover:text-emerald-600 transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Proyectos
             </button>
             <button
               onClick={() => scrollToSection('nosotros')}
-              className="text-gray-700 hover:text-emerald-600 transition-colors"
+              className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Nosotros
             </button>
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-gray-700 hover:text-emerald-600 transition-colors outline-hidden">
+              <DropdownMenuTrigger className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition-colors outline-hidden">
                 Interno
-                <ChevronDown size={16} />
+                <ChevronDown size={14} />
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem
                   onClick={() => window.open('/inventario', '_blank')}
                   className="cursor-pointer"
                 >
-                  Gestión de Inventario
+                  Inventario
                 </DropdownMenuItem>
                 <DropdownMenuItem
                   onClick={() => window.open('/rh', '_blank')}
                   className="cursor-pointer"
                 >
-                  Recursos Humanos
+                  Obras
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <button
               onClick={() => scrollToSection('contacto')}
-              className="bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors"
+              className="bg-[#0d6efd] text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
             >
               Contacto
             </button>
@@ -98,30 +98,30 @@ export function Header() {
           <nav className="md:hidden pb-4 flex flex-col gap-4">
             <button
               onClick={() => scrollToSection('inicio')}
-              className="text-gray-700 hover:text-emerald-600 transition-colors text-left"
+              className="text-gray-700 hover:text-blue-600 transition-colors text-left"
             >
               Inicio
             </button>
             <button
               onClick={() => scrollToSection('servicios')}
-              className="text-gray-700 hover:text-emerald-600 transition-colors text-left"
+              className="text-gray-700 hover:text-blue-600 transition-colors text-left"
             >
               Servicios
             </button>
             <button
               onClick={() => scrollToSection('proyectos')}
-              className="text-gray-700 hover:text-emerald-600 transition-colors text-left"
+              className="text-gray-700 hover:text-blue-600 transition-colors text-left"
             >
               Proyectos
             </button>
             <button
               onClick={() => scrollToSection('nosotros')}
-              className="text-gray-700 hover:text-emerald-600 transition-colors text-left"
+              className="text-gray-700 hover:text-blue-600 transition-colors text-left"
             >
               Nosotros
             </button>
             <DropdownMenu>
-              <DropdownMenuTrigger className="flex items-center gap-1 text-gray-700 hover:text-emerald-600 transition-colors text-left outline-hidden">
+              <DropdownMenuTrigger className="flex items-center gap-1 text-gray-700 hover:text-blue-600 transition-colors text-left outline-hidden">
                 Interno
                 <ChevronDown size={16} />
               </DropdownMenuTrigger>
@@ -142,7 +142,7 @@ export function Header() {
             </DropdownMenu>
             <button
               onClick={() => scrollToSection('contacto')}
-              className="bg-emerald-600 text-white px-6 py-2 rounded-lg hover:bg-emerald-700 transition-colors text-left"
+              className="bg-[#0d6efd] text-white px-6 py-2 rounded-lg hover:bg-[#0d6efd]-700 transition-colors text-left"
             >
               Contacto
             </button>

@@ -53,7 +53,7 @@ export function Projects() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                <span className="inline-block bg-emerald-600 text-white px-3 py-1 rounded-full text-sm mb-3">
+                <span className="inline-block bg-[#0d6efd] text-white px-3 py-1 rounded-full text-sm mb-3">
                   {project.category}
                 </span>
                 <h3 className="text-2xl mb-2">{project.title}</h3>
