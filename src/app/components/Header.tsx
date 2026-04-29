@@ -131,10 +131,10 @@ export function Header() {
                   Gestión de Inventario
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  onClick={() => window.open("/rh", "_blank")}
+                  onClick={() => window.open("https://dazna.mx/interno/rh/login.html", "_blank")}
                   className="cursor-pointer"
                 >
-                  Recursos Humanos
+                  Obras
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
