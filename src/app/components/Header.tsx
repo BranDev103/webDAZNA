@@ -1,11 +1,12 @@
-import { Menu, X, ChevronDown } from 'lucide-react';
-import { useState } from 'react';
+import { Menu, X, ChevronDown } from "lucide-react";
+import { useState } from "react";
+import logo from '../../assets/logo_header.png';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from './ui/dropdown-menu';
+} from "./ui/dropdown-menu";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ export function Header() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setIsMenuOpen(false);
     }
   };
@@ -24,34 +25,31 @@ export function Header() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
             <img
-              src="/src/assets/logo_header.png"
-              alt="Constructora Dazna Logo"
-              className="h-12 w-auto object-contain"
-            />
+              src={logo} alt="Logo" className="h-12 w-auto object-contain"/>
           </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button
-              onClick={() => scrollToSection('inicio')}
+              onClick={() => scrollToSection("inicio")}
               className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Inicio
             </button>
             <button
-              onClick={() => scrollToSection('servicios')}
+              onClick={() => scrollToSection("servicios")}
               className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Servicios
             </button>
             <button
-              onClick={() => scrollToSection('proyectos')}
+              onClick={() => scrollToSection("proyectos")}
               className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Proyectos
             </button>
             <button
-              onClick={() => scrollToSection('nosotros')}
+              onClick={() => scrollToSection("nosotros")}
               className="text-gray-700 hover:text-blue-600 transition-colors"
             >
               Nosotros
@@ -63,13 +61,13 @@ export function Header() {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem
-                  onClick={() => window.open('/inventario', '_blank')}
+                  onClick={() => window.open("/inventario", "_blank")}
                   className="cursor-pointer"
                 >
                   Inventario
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  onClick={() => window.open('/rh', '_blank')}
+                  onClick={() => window.open("https://dazna.mx/interno/rh/login.html", "_blank")}
                   className="cursor-pointer"
                 >
                   Obras
@@ -77,7 +75,7 @@ export function Header() {
               </DropdownMenuContent>
             </DropdownMenu>
             <button
-              onClick={() => scrollToSection('contacto')}
+              onClick={() => scrollToSection("contacto")}
               className="bg-[#0d6efd] text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
             >
               Contacto
@@ -97,25 +95,25 @@ export function Header() {
         {isMenuOpen && (
           <nav className="md:hidden pb-4 flex flex-col gap-4">
             <button
-              onClick={() => scrollToSection('inicio')}
+              onClick={() => scrollToSection("inicio")}
               className="text-gray-700 hover:text-blue-600 transition-colors text-left"
             >
               Inicio
             </button>
             <button
-              onClick={() => scrollToSection('servicios')}
+              onClick={() => scrollToSection("servicios")}
               className="text-gray-700 hover:text-blue-600 transition-colors text-left"
             >
               Servicios
             </button>
             <button
-              onClick={() => scrollToSection('proyectos')}
+              onClick={() => scrollToSection("proyectos")}
               className="text-gray-700 hover:text-blue-600 transition-colors text-left"
             >
               Proyectos
             </button>
             <button
-              onClick={() => scrollToSection('nosotros')}
+              onClick={() => scrollToSection("nosotros")}
               className="text-gray-700 hover:text-blue-600 transition-colors text-left"
             >
               Nosotros
@@ -127,13 +125,13 @@ export function Header() {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem
-                  onClick={() => window.open('/inventario', '_blank')}
+                  onClick={() => window.open("/inventario", "_blank")}
                   className="cursor-pointer"
                 >
                   Gestión de Inventario
                 </DropdownMenuItem>
                 <DropdownMenuItem
-                  onClick={() => window.open('/rh', '_blank')}
+                  onClick={() => window.open("/rh", "_blank")}
                   className="cursor-pointer"
                 >
                   Recursos Humanos
@@ -141,7 +139,7 @@ export function Header() {
               </DropdownMenuContent>
             </DropdownMenu>
             <button
-              onClick={() => scrollToSection('contacto')}
+              onClick={() => scrollToSection("contacto")}
               className="bg-[#0d6efd] text-white px-6 py-2 rounded-lg hover:bg-[#0d6efd]-700 transition-colors text-left"
             >
               Contacto

@@ -1,13 +1,14 @@
-import { ImageWithFallback } from './figma/ImageWithFallback';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { ImageWithFallback } from "./figma/ImageWithFallback";
+import Slider from "react-slick";
+import obra from "../../assets/construction_1.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export function Hero() {
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
     }
   };
 
@@ -26,25 +27,32 @@ export function Hero() {
 
   const slides = [
     {
-      image: 'https://images.unsplash.com/photo-1762049297262-4eef6d6d4d7b?w=1920&q=80',
-      alt: 'Construcción moderna',
+      image:
+        "https://images.unsplash.com/photo-1762049297262-4eef6d6d4d7b?w=1920&q=80",
+      alt: "Construcción moderna",
     },
     {
-      image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80',
-      alt: 'Edificio en construcción',
+      image:
+        "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=80",
+      alt: "Edificio en construcción",
     },
     {
-      image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1920&q=80',
-      alt: 'Proyecto arquitectónico',
+      image:
+        "https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1920&q=80",
+      alt: "Proyecto arquitectónico",
     },
     {
-      image: '/src/assets/construction_1.png',
-      alt: 'Construcción industrial',
+      image:
+        "https://plus.unsplash.com/premium_photo-1681989490797-dbe51c438b61?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29uc3RydWNjaW9uZXN8ZW58MHx8MHx8fDA%3D",
+      alt: "Construcción industrial",
     },
   ];
 
   return (
-    <section id="inicio" className="relative h-screen flex items-center justify-center">
+    <section
+      id="inicio"
+      className="relative h-screen flex items-center justify-center"
+    >
       <div className="absolute inset-0 z-0">
         <Slider {...carouselSettings} className="h-full">
           {slides.map((slide, index) => (
@@ -65,17 +73,18 @@ export function Hero() {
           Construimos tus sueños
         </h2>
         <p className="text-xl md:text-2xl mb-8 text-gray-200">
-          Más de 20 años de experiencia en construcción residencial, comercial e industrial
+          Más de 20 años de experiencia en construcción residencial, comercial e
+          industrial
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
-            onClick={() => scrollToSection('proyectos')}
+            onClick={() => scrollToSection("proyectos")}
             className="bg-[#0d6efd] text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition-colors text-lg"
           >
             Ver Proyectos
           </button>
           <button
-            onClick={() => scrollToSection('contacto')}
+            onClick={() => scrollToSection("contacto")}
             className="bg-white text-gray-900 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors text-lg"
           >
             Solicitar Cotización
