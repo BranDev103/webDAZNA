@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Linkedin} from 'lucide-react';
+import { Facebook, Twitter, MessageSquareText, Linkedin} from 'lucide-react';
 
 export function Footer() {
 
@@ -39,11 +39,11 @@ export function Footer() {
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#1877F2] transition-colors">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#00acee] transition-colors">
+              <a href="https://x.com/cDazna" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#00acee] transition-colors">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#C13584] transition-colors">
-                <Instagram className="w-5 h-5" />
+              <a href="https://wa.me/527714897084" target="_blank"  className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#25D390] transition-colors">
+                <MessageSquareText className="w-5 h-5" />
               </a>
               <a href="#" className="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[#0A66C2] transition-colors">
                 <Linkedin className="w-5 h-5" />
@@ -53,7 +53,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
-          <p>&copy; 2026 Constructora Dazna S.A. de C.V. - Todos los derechos reservados.</p>
+          <p>&copy; Copyright 2026 Constructora Dazna S.A. de C.V. - Todos los derechos reservados.</p>
         </div>
       </div>
     </footer>

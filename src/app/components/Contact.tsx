@@ -144,26 +144,27 @@ export function Contact() {
                     <div className="text-gray-700 mb-1">Dirección</div>
                     <address className="text-xl text-gray-800 not-italic hover:text-[#0d6efd]">
                       <a href="https://maps.app.goo.gl/EfipwvC5R4h4n4Lk9" target="_blank">Blvd. Valle de San Javier, N. 101, 3er piso, Col. Valle de
-                      San Javier, C.P. 42086, Pachuca de Soto, Hgo.</a>
+                        San Javier, C.P. 42086, Pachuca de Soto, Hgo.</a>
                     </address>
-                
+
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="bg-blue-50 p-8 rounded-xl border-2 border-blue-200">
-              <h3 className="text-2xl mb-4">Horario de Atención</h3>
-              <div className="space-y-2 text-gray-700">
-                <p>
-                  <span className="font-semibold">Lunes a Viernes:</span> 9:00 AM - 6:00 PM
-                </p>
-                <p>
-                  <span className="font-semibold">Sábado:</span> 9:00 AM - 1:00 PM
-                </p>
-                <p>
-                  <span className="font-semibold">Domingo:</span> Cerrado
-                </p>
+            <div className="bg-gray-50 rounded-xl overflow-hidden border-2 border-gray-200">
+              <h3 className="text-2xl p-6 pb-2">Ubicación</h3>
+              <div className="h-64">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14986.962168876187!2d-98.75081199999997!3d20.103130000000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a0ada0637ee1%3A0xa006f2a914b9d0c7!2sBlvd.%20Valle%20de%20San%20Javier%20101%2C%20Valle%20de%20San%20Javier%2C%2042086%20Pachuca%20de%20Soto%2C%20Hgo.!5e0!3m2!1ses!2smx!4v1777916182941!5m2!1ses!2smx"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Ubicación en Google Maps"
+                ></iframe>
               </div>
             </div>
           </div>

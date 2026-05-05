@@ -1,29 +1,33 @@
 import { ImageWithFallback } from './figma/ImageWithFallback';
+import hospitalAguascalientes from "../../assets/hospital_aguascalientes.jpg";
+import cumar from "../../assets/Cumar-manzanillo.jpg";
+import reynosa from "../../assets/Terminal_reynosa.png";
+import conavi from "../../assets/Nissan-renault aguascalientes.jpg";
 
 const projects = [
   {
-    image: 'https://images.unsplash.com/photo-1672508013582-035e75fb76ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyZXNpZGVudGlhbCUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3J8ZW58MXx8fHwxNzc0NTYxNjA5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    title: 'Residencial Los Pinos',
-    category: 'Residencial',
-    description: 'Complejo residencial de 50 unidades con áreas verdes',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1580741990231-4aa1c1d9a76a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21tZXJjaWFsJTIwb2ZmaWNlJTIwYnVpbGRpbmclMjBnbGFzc3xlbnwxfHx8fDE3NzQ1NjE2MTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    title: 'Torre Corporativa Central',
+    image: hospitalAguascalientes,
+    title: 'Hospital General de Zona Aguascalientes',
     category: 'Comercial',
-    description: 'Edificio de oficinas de 15 pisos con diseño vanguardista',
+    description: 'Hospital de 200 camas con áreas de urgencias, quirófanos y consultorios',
   },
   {
-    image: 'https://images.unsplash.com/photo-1638454668466-e8dbd5462f20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBhcGFydG1lbnQlMjBpbnRlcmlvcnxlbnwxfHx8fDE3NzQ0NjYxMDZ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    title: 'Apartamentos Vista Premium',
+    image: cumar,
+    title: 'Instalaciones CUMAR Puerto Manzanillo',
+    category: 'Mantenimiento',
+    description: 'Mantenimiento integral para complejo aeroportuario en Manzanillo',
+  },
+  {
+    image: reynosa,
+    title: 'Terminal de Pasajeros Reynosa',
+    category: 'Comercial',
+    description: 'Terminal de pasajeros del aeropuerto internacional de Reynosa',
+  },
+  {
+    image: conavi,
+    title: 'Edificios del bienestar',
     category: 'Residencial',
-    description: 'Apartamentos de lujo con acabados de primera calidad',
-  },
-  {
-    image: 'https://images.unsplash.com/photo-1761479125211-78617f2285a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmR1c3RyaWFsJTIwY29uc3RydWN0aW9uJTIwaW5mcmFzdHJ1Y3R1cmV8ZW58MXx8fHwxNzc0NTYxNjEwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-    title: 'Planta Industrial TechPark',
-    category: 'Industrial',
-    description: 'Nave industrial de 5,000 m² con tecnología de punta',
+    description: 'Viviendas para el programa del bienestar en Tepeji del Río, Hidalgo',
   },
 ];
 
