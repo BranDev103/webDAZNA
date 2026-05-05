@@ -117,7 +117,8 @@ export function Contact() {
                     <div className="text-gray-800 mb-1">Teléfono</div>
                     <a
                       href="https://wa.me/527714897084"
-                      className="text-xl text-gray-800 hover:text-[#0d6efd]">+52 7714897084
+                      className="text-xl text-gray-800 hover:text-[#0d6efd]"
+                      target="_blank">+52 7714897084
                     </a>
                   </div>
                 </div>
@@ -130,7 +131,8 @@ export function Contact() {
                     <div className="text-gray-700 mb-1">Email</div>
                     <a
                       href="mailto:contacto@dazna.mx"
-                      className="text-xl text-gray-800 hover:text-[#0d6efd]">
+                      className="text-xl text-gray-800 hover:text-[#0d6efd]"
+                      target="_blank">
                       contacto@dazna.mx
                     </a>
                   </div>

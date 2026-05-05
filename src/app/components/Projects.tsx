@@ -29,6 +29,20 @@ const projects = [
     category: 'Residencial',
     description: 'Viviendas para el programa del bienestar en Tepeji del Río, Hidalgo',
   },
+  /*
+  {
+    image: hospitalAguascalientes,
+    title: 'Hospital General de Zona Aguascalientes',
+    category: 'Comercial',
+    description: 'Hospital de 200 camas con áreas de urgencias, quirófanos y consultorios',
+  },
+  {
+    image: cumar,
+    title: 'Instalaciones CUMAR Puerto Manzanillo',
+    category: 'Mantenimiento',
+    description: 'Mantenimiento integral para complejo aeroportuario en Manzanillo',
+  },
+  */
 ];
 
 export function Projects() {
