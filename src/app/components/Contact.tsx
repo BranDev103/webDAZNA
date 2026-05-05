@@ -116,7 +116,7 @@ export function Contact() {
                   <div>
                     <div className="text-gray-800 mb-1">Teléfono</div>
                     <a
-                      href="tel:+1234567890"
+                      href="https://wa.me/527714897084"
                       className="text-xl text-gray-800 hover:text-[#0d6efd]">+52 7714897084
                     </a>
                   </div>
